@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <title>Document</title>
 </head>
 <body>
     <section class="your-order">
         <div class="text-fresh">
             <h2 class="text-fresh_title">FRESH 
-                <span class="Harvest">HARVEST</span> 
+                <span class="harvest-span">HARVEST</span> 
                 BOX HAS GOT YOU COVERED</h2>
             </h2>
             <p class="text-fresh_text">Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or 
@@ -17,11 +25,43 @@
             </p>
         </div>
         <div class="form">
-            
+            <h3 class="form-text">Ordering <span class="form-us">from us</span> is quick 
+                and easy! Fill out <span class="the-form">the form</span> below and we will contact you !</h3>
+            <form action="#" class="form-modal">
+                <!-- <label class="form-modal_label" for="user.name" ></label> -->
+                    <input  class="input-btn" placeholder="Full Name"
+                    type="text"  required
+                     />
+                <!-- <label class="form-modal_label" for="email"></label> -->
+                     <input class="input-btn" 
+                     type="email" placeholder="Email"
+                     pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})") required
+                      >
+                      <p class="text-valid">Başarili</p>
+                      <p class="text-invalid">Geçersiz e-posta, tekrar deneyin</p>
+                <!-- <label class="form-modal_label" for="user-comment"> -->
+                    <textarea class="input-btn" placeholder="Comment" required>
+                    </textarea>
+                </label>
+                <button class="form-modal_btn" type="submit">Send</button>
+            </form>
         </div>
         <div class="image-social">
-            
+            <img src="../images/youorders.png" 
+            srcset="../images/youorders.png, 
+            ../images/youorders@2x.png 2x,
+             ../images/youorders@3x.png 3x"
+            alt="vitamin Drink"
+            width="295"/>
+            <p >Follow us on our social networks:</p>
+            <ul class="social-link">
+                <li class="text-link"><a href="https://www.instagram.com/goit.turkiye/">instagram</a></li>
+                <li class="text-link"><a href="https://m.youtube.com/@GoITTurkey">youtube</a></li>
+                <li class="text-link"><a href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/">facebook</a></li>
+            </ul>
         </div>
     </section>
 </body>
 </html>
+
+
