@@ -1,0 +1,110 @@
+.section-two {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div-images {
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  background-color: #7a3145;
+}
+.div-images img {
+  width: 440px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.howitworks-div {
+  display: flex;
+  flex-direction: column;
+  background-color: #576f35;
+  padding: 100px;
+  gap: 104px;
+}
+.text-1 {
+  width: 440px;
+  height: 96px;
+  font-family: "Inter Tight";
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: -1.5%;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.text-2 {
+  width: 440px;
+  height: 60px;
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.section-two-h {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.howitworks-div .section-two-h {
+  color: white;
+}
+.howitworks-div .section-two-h .span-h {
+  color: #d4bfc4;
+}
+.div-ol {
+  width: 440px;
+}
+
+.div-ol .section-ol {
+  color: grey;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.div-ol .section-ol .span-list {
+  color: black;
+}
+.item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  padding-top: 12px;
+  padding-right: 25px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  gap: 10px;
+}
+.item-number {
+  padding: 11px 17px;
+  background-color: #7a3145;
+  color: #fbfbfb;
+  font-family: Inter Tight;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  border: 5px solid #d4bfc4;
+  border-radius: 50%;
+}
+
+/*TABLET TASARIM*/
+@media (min-width: 768px) and (max-width: 1157px) {
+  .section-two {
+    flex-direction: column;
+  }
+}
+
+/*MOBIL*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .section-two {
+    flex-direction: column;
+  }
+}
