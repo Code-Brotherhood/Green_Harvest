@@ -1,0 +1,97 @@
+/* Genel Ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+/* Banner */
+.header-banner {
+  background-color: #5b965c;
+  text-align: center;
+  padding: 20px 10px;
+  color: #fff;
+}
+
+.header-banner .discount {
+  font-weight: bold;
+  font-size: 20px;
+  color: #d3e346;
+}
+
+.header-banner h1 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* İçerik Bölümü */
+.vegetables-section {
+  background-color: #7a3f51;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.vegetables-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.vegetables-section h2 span {
+  color: #bdb9ba;
+}
+
+.vegetables-section .description {
+  margin: 15px 0 30px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Ürün Kartları */
+.vegetable-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.vegetable-card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.vegetable-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.vegetable-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.vegetable-card p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive Tasarım */
+@media (min-width: 768px) {
+  .vegetable-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .header-banner h1 {
+    font-size: 30px;
+  }
+}

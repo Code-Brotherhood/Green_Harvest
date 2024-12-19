@@ -1,0 +1,63 @@
+.four-section-vegetables {
+  background-color: #7a3145;
+}
+.organic-vegetables {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-right: 454px;
+}
+
+.organic-vegetables .title-vegetables {
+  font-family: Inter Tight;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 64px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 118px;
+}
+
+.container {
+  padding: 100px;
+}
+
+.four-second {
+  color: #fbfbfb;
+}
+
+.vegetables-accent {
+  color: #d4bfc4;
+}
+
+p {
+  font-family: "Inter Tight";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: "from-font";
+  text-decoration-skip-ink: none;
+  color: #fbfbfb;
+}
+
+.vegetables-item-title {
+  color: #7a3145;
+  font-family: "Inter Tight";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  text-underline-position: "from-font";
+  text-decoration-skip-ink: none;
+}
+
+.vegetables-list p {
+  display: none;
+}
+
+.vegetables-cards {
+  list-style: none;
+}
