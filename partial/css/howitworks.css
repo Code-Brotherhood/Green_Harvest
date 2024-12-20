@@ -30,7 +30,7 @@
   font-family: "Inter Tight";
   font-weight: 600;
   font-size: 32px;
-  letter-spacing: -1.5%;
+  letter-spacing: 0;
   line-height: 32px;
   text-transform: uppercase;
   margin: 0;
@@ -54,6 +54,7 @@
 .howitworks-div .section-two-h .span-h {
   color: #d4bfc4;
 }
+
 .div-ol {
   width: 440px;
 }
@@ -69,6 +70,13 @@
 
 .div-ol .section-ol .span-list {
   color: black;
+  font-family: "Inter Tight";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: "from-font";
+  text-decoration-skip-ink: none;
 }
 .item {
   display: flex;
@@ -99,6 +107,26 @@
   .section-two {
     flex-direction: column;
   }
+  .div-images img {
+    width: 640px;
+  }
+  .div-ol {
+    padding: auto;
+    margin: auto;
+  }
+  .div-ol .section-ol {
+    margin: auto;
+    width: 440px;
+  }
+  .span-list {
+    font-family: "Inter Tight";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: "from-font";
+    text-decoration-skip-ink: none;
+  }
 }
 
 /*MOBIL*/
@@ -106,5 +134,31 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .section-two {
     flex-direction: column;
+    width: 100%;
+  }
+  .div-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 532px;
+    padding: 40px 20px 40px 20px;
+  }
+  .text-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .text-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+  }
+  .div-ol {
+    width: 335px;
+  }
+  .section-ol {
+    margin: auto;
+  }
+  .div-ol .section-ol {
+    margin: 0;
   }
 }
