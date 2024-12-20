@@ -156,8 +156,9 @@
   }
   .section-ol {
     margin: auto;
-  }
-  .item p {
-    margin: 0;
+    display: inline-flex;
+    margin: 40px 20px 80px 0px;
+    justify-content: center;
+    align-content: center;
   }
 }
