@@ -52,8 +52,10 @@ body {
 
 .reviews-list {
     display: flex;
+    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    list-style-type: none;
+   /* list-style-type: none;*/
     gap: 24px;
     justify-content: space-between;
     width: 1080px;
@@ -64,11 +66,16 @@ body {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    width: 344px;
-    height: 248px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    display: block;
+    width: 340px;
+    height: 340px;
+}
+
+.review-card {
+    padding: 20px;
 }
 
 .review-item:hover {
@@ -218,5 +225,5 @@ img[loading="lazy"].loaded {
 }
 .review-item:hover {
     transform: scale(1.02);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
