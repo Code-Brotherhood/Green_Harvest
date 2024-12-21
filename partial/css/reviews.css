@@ -1,3 +1,5 @@
+/* Özkan */
+
 /* General Reset */
 * {
     margin: 0;
@@ -44,6 +46,10 @@ body {
     line-height: 1.5;
 }
 
+.highlight {
+    color: #6e8b3d; /* Green Highlight */
+}
+
 .reviews-list {
     display: flex;
     flex-wrap: wrap;
@@ -86,7 +92,7 @@ body {
     color: #666;
 }
 
-/* Tablet View */
+/* Tablet View: 2 visible reviews */
 @media (min-width: 768px) and (max-width: 1279px) {
     .reviews {
         padding: 100px 32px;
@@ -133,7 +139,7 @@ body {
     }
 }
 
-/* Mobile View */
+/* Mobile View: 1 visible review */
 @media (max-width: 767px) {
     .reviews {
         padding: 80px 20px;
