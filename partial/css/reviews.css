@@ -177,3 +177,29 @@ body {
         scroll-snap-align: center;
     }
 }
+
+/* Retina Display Optimization */
+.review-img {
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+}
+/* SVG Sprite */
+svg {
+    display: none;
+}
+/* Loading Optimization */
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+img[loading="lazy"].loaded {
+    opacity: 1;
+}
+/* Accessibility Enhancements */
+.review-item:focus-within {
+    outline: 2px solid #6e8b3d;
+}
+.review-item:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
