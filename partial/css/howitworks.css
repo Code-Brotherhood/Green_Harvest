@@ -1,6 +1,5 @@
 .section-two {
   display: flex;
-  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -16,7 +15,11 @@
   object-fit: cover;
   border-radius: 30px;
 }
-
+.section-two-h {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .howitworks-div {
   display: flex;
   flex-direction: column;
@@ -24,15 +27,28 @@
   padding: 100px;
   gap: 104px;
 }
+.section-two-h {
+  color: white;
+  gap: 24px;
+}
+.span-h {
+  color: #d4bfc4;
+}
 .text-1 {
   width: 440px;
   height: 96px;
   font-family: "Inter Tight";
   font-weight: 600;
   font-size: 32px;
-  letter-spacing: 0;
+  letter-spacing: -0.015em;
   line-height: 32px;
   text-transform: uppercase;
+  text-align: left;
+  text-underline-position: "from-font";
+  text-decoration-skip-ink: none;
+  padding: 0;
+}
+h2.text-1 {
   margin: 0;
 }
 .text-2 {
@@ -42,41 +58,21 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  text-align: left;
+  text-underline-position: "from-font";
+  text-decoration-skip-ink: none;
 }
-.section-two-h {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+p.text-2 {
+  margin: 0;
 }
-.howitworks-div .section-two-h {
-  color: white;
-}
-.howitworks-div .section-two-h .span-h {
-  color: #d4bfc4;
-}
-
-.div-ol {
+.section-ol {
   width: 440px;
-}
-
-.div-ol .section-ol {
   color: grey;
   list-style-type: none;
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-.div-ol .section-ol .span-list {
-  color: black;
-  font-family: "Inter Tight";
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 .item {
   display: flex;
@@ -93,13 +89,33 @@
   padding: 11px 17px;
   background-color: #7a3145;
   color: #fbfbfb;
-  font-family: Inter Tight;
+  font-family: "Inter Tight";
   font-size: 18px;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: -0.015em;
   border: 5px solid #d4bfc4;
   border-radius: 50%;
+}
+.span-list {
+  color: black;
+  font-family: "Inter Tight";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: "from-font";
+  text-decoration-skip-ink: none;
+}
+.section-ol p {
+  font-family: "Inter Tight";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: "from-font";
+  text-decoration-skip-ink: none;
+  margin: 0;
 }
 
 /*TABLET TASARIM*/
@@ -110,10 +126,10 @@
   .div-images img {
     width: 640px;
   }
-  .div-ol {
-    margin: auto;
+  .howitworks-div {
+    gap: 52px;
   }
-  .div-ol .section-ol {
+  .section-ol {
     margin: auto;
     width: 440px;
   }
@@ -133,7 +149,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .section-two {
     flex-direction: column;
-    width: 100%;
+    text-align: start;
   }
   .div-images {
     display: flex;
@@ -150,15 +166,5 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 40px;
-  }
-  .div-ol {
-    width: 335px;
-  }
-  .section-ol {
-    margin: auto;
-    display: inline-flex;
-    margin: 40px 20px 80px 0px;
-    justify-content: center;
-    align-content: center;
   }
 }
