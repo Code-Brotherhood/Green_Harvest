@@ -1,5 +1,8 @@
 .section-two {
   display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
