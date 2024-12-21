@@ -125,13 +125,18 @@ p.text-2 {
 /*TABLET TASARIM*/
 @media (min-width: 768px) and (max-width: 1157px) {
   .section-two {
+    width: 768px;
     flex-direction: column;
+  }
+  .div-images {
+    margin: auto;
+    padding: 100px 64px;
   }
   .div-images img {
     width: 640px;
   }
   .howitworks-div {
-    gap: 52px;
+    width: 768px;
   }
   .section-ol {
     margin: auto;
